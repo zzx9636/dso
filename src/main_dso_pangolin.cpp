@@ -523,7 +523,10 @@ int main( int argc, char** argv )
                     printf("LOST!!\n");
                     break;
             }
-
+			/*
+			if(fullSystem->initialized)
+				std::cin.get();
+			*/
         }
         fullSystem->blockUntilMappingIsFinished();
         clock_t ended = clock();
